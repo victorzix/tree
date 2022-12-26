@@ -15,6 +15,65 @@ body {
   position: fixed;
 }
 
+@keyframes get-in {
+  from {
+    opacity: 0.5;
+  }
+  from {
+    transform: translateX(-8em);
+  }
+  to {
+    transform: translateX(0em);
+  }
+}
+@keyframes reveal-link1{
+  from{
+    transform: translateX(-12em);
+    opacity: 0.5;
+  }
+  to{
+    transform: translateX(0em);
+    opacity: 1;
+  }
+}
+@keyframes reveal-link2{
+  from{
+    transform: translateX(-14em);
+    opacity: 0.5;
+  }
+  to{
+    transform: translateX(0em);
+    opacity: 1;
+  }
+}
+@keyframes reveal-link3{
+  from{
+    transform: translateX(-16em);
+    opacity: 0.5;
+  }
+  to{
+    transform: translateX(0em);
+    opacity: 1;
+  }
+}
+#logo img {
+  animation-name: get-in;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+.link1 {
+  animation-name: reveal-link1;
+  animation-duration: 1s;
+}
+.link2 {
+  animation-name: reveal-link2;
+  animation-duration: 1s;
+}
+.link3 {
+  animation-name: reveal-link3;
+  animation-duration: 1s;
+}
+
 #logo {
   z-index: 4;
   height: 100%;
@@ -30,7 +89,7 @@ body {
 .logo {
   width: 8rem;
   border-radius: 65px;
-  border: #8F3B14 2px solid;
+  border: #8f3b14 2px solid;
 }
 .links {
   text-decoration: none;
@@ -38,21 +97,19 @@ body {
   border: black 1px solid;
   padding: 10px 66px;
   border-radius: 100px;
-  box-shadow: 1px 2px 3px 2px #8F3B14;
+  box-shadow: 1px 2px 3px 2px #8f3b14;
   display: flex;
   gap: 1rem;
 }
-span{
-
-    color: black;
-    border: black 1px solid;
-    padding: 10px 23px;
-    border-radius: 100px;
-    display: flex;
-    gap: 1rem;
-    box-shadow: 1px 2px 3px 2px #8F3B14;
+.link3 {
+  color: black;
+  border: black 1px solid;
+  padding: 10px 23px;
+  border-radius: 100px;
+  display: flex;
+  gap: 1rem;
+  box-shadow: 1px 2px 3px 2px #8f3b14;
 }
-
 
 @media (max-width: 1000px) {
   #logo {
